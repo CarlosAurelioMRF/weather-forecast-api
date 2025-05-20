@@ -19,7 +19,7 @@ export class WeatherService {
     private readonly eventsGateway: EventsGateway,
   ) {}
 
-  @Cron(CronExpression.EVERY_30_SECONDS)
+  @Cron(CronExpression.EVERY_10_MINUTES)
   async updateConnectedUsers() {
     this.logger.debug('Updating weather data every 10 minutes');
 
